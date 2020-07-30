@@ -32,7 +32,7 @@ const Repository: React.FC = () => {
     const [address, setAddress] = useState();
     const [status, setStatus] = useState();
     const [userCurrent, setUserCurrent] = useState<User | undefined>();
-    const [inputError, setInputError] = useState();
+    const [inputError, setInputError] = useState('');
     const [list, setList] = useState<IRepository>([]);
     const ageCurrent = userCurrent?.age.toString();
     const { params } = useRouteMatch<any>();
