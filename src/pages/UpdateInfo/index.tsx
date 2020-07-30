@@ -47,11 +47,15 @@ const Repository: React.FC = () => {
             },
         };
         async function loadTransactions(): Promise<void> {
-            await api
-                .put(`/transactions/${params.id}`, users)
-                .then((response) => {
-                    alert(response.data);
-                });
+            try {
+                await api
+                    .put(`/transactions/${params.id}`, users)
+                    .then((response) => {
+                        alert(response.data);
+                    });
+            } catch {
+                setInputError('não foi possivel cadastrar essa pessoa.');
+            }
         }
         loadTransactions();
     };
