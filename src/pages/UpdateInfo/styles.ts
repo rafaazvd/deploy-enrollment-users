@@ -73,8 +73,8 @@ export const RepositoriesInfo = styled.section`
         text-decoration: none;
         padding: 11px;
         position: absolute;
-        right: 27%;
-        top: 72%;
+        right: 17%;
+        top: 12%;
         color: #fff;
         border-radius: 9px;
         &:hover {
