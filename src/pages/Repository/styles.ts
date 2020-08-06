@@ -49,10 +49,10 @@ export const RepositoriesInfo = styled.section`
 
                     button {
                         & + button {
-                            right: 13%;
+                            right: 11%;
                         }
                         position: absolute;
-                        right: 11%;
+                        right: 9%;
                         border: none;
                         background-color: #dddd;
                     }
